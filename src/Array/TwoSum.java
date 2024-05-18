@@ -30,6 +30,6 @@ public class TwoSum {
         return new int[]{};
     }
 
-    /*optimized Solution - Hash map
+    //optimized Solution - Hash map
 
 }
