@@ -16,7 +16,7 @@ public class CircularQueue {
 
         //is empty
         public static boolean isEmpty(){
-            return front==-1 && rear == -1;
+            return rear == -1;
         }
         //is full
         public static boolean isFull(){
