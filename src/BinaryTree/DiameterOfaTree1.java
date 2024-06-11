@@ -30,7 +30,7 @@ public class DiameterOfaTree1 {
         int rdiam = diam(root.right);
         int lh = height(root.left);
         int rh = height(root.right);
-        int self_diam = lh + rh + 1;
+        int self_diam = lh + rh ;
         return Math.max(self_diam, Math.max(ldiam, rdiam));
     }
 
