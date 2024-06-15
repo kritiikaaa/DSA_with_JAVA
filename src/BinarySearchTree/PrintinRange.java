@@ -41,10 +41,10 @@ public class PrintinRange {
             printInRange(root.left, k1, k2);
             System.out.print(root.data+ " ");
             printInRange(root.right,k1,k2);
-        } else if(root.data>k2){
-            printInRange(root.right, k1, k2);
-        } else{
+        } else if(root.data>k1  && root.data>k2){
             printInRange(root.left, k1, k2);
+        } else if(root.data<k1 && root.data<k2){
+            printInRange(root.right, k1, k2);
         }
     }
 
@@ -59,6 +59,6 @@ public class PrintinRange {
         //to check = inorder traversal should be in ascending order
         inorder(root);
         System.out.println();
-        printInRange(root, 3,8);
+        printInRange(root, 2,7);
     }
 }
