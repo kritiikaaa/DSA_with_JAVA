@@ -31,9 +31,9 @@ public class ArrayToBalancedBST {
         return root;
     }
 
-    public static void main(String[] args) {
-        int[] arr = {3,5,6,8,10,11,12};
-        Node root = balancedBST(arr,0,arr.length-1);
-        preOrder(root);
-    }
+    public static void main(String[] args) {                       //       8
+        int[] arr = {3,5,6,8,10,11,12};                           //      /   \
+        Node root = balancedBST(arr,0,arr.length-1);    //      5    11
+        preOrder(root);                                          //     / \   / \
+    }                                                           //      3 6  10 12
 }
